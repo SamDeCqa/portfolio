@@ -2,18 +2,11 @@
 
 import {
   Typography,
-  Card,
-  CardBody,
-  Radio,
-  Input,
-  Textarea,
-  Button,
-  IconButton,
 } from "@material-tailwind/react";
 import { ArrowUpRightIcon, EnvelopeIcon, EnvelopeOpenIcon, FaceSmileIcon, PhoneIcon, TicketIcon } from "@heroicons/react/24/solid";
 import { SiX, SiInstagram, SiWhatsapp, SiTelegram } from "react-icons/si";
 
-export function ContactForm() {
+export function Contacts() {
   return (
     <section className="px-8 py-16">
       <div className="container mx-auto mb-20 text-center">
@@ -28,7 +21,7 @@ export function ContactForm() {
           and let&apos;s embark on a journey of innovation and success.
         </Typography>
       </div>
-      <div className="md:flex flex-col gap-8 justify-center space-y-4">
+      <div className="flex flex-col md:flex-row gap-8 justify-center space-y-4">
         <div className="grid p-2 border border-gray-100 rounded-2xl space-y-2 text-gray-500 hover:text-green-500 hover:border-green-500 transition-all duration-300 cursor-pointer">
           <SiWhatsapp className="w-24 h-24" />
           <div className="flex justify-between items-center">
@@ -73,4 +66,4 @@ export function ContactForm() {
   );
 }
 
-export default ContactForm;
+export default Contacts;

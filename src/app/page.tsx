@@ -9,8 +9,8 @@ import Projects from "./projects";
 import Resume from "./resume";
 import Testimonial from "./testimonial";
 import PopularClients from "./popular-clients";
-import ContactForm from "./contact-form";
 import TechStack from "./techStack";
+import Contacts from "./contacts";
 
 export default function Portfolio() {
   return (
@@ -24,7 +24,7 @@ export default function Portfolio() {
       <Resume />
       <Testimonial />
       <PopularClients />
-      <ContactForm />
+      <Contacts />
       <Footer />
     </>
   );

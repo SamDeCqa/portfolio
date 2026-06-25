@@ -33,7 +33,7 @@ export function Skills() {
   return (
     <section className="px-8">
       <div className="container mx-auto mb-20 text-center">
-        <Typography color="blue-gray" className="mb-2 font-bold uppercase">g
+        <Typography color="blue-gray" className="mb-2 font-bold uppercase">
           my skills
         </Typography>
         <Typography variant="h1" color="blue-gray" className="mb-4 text-7xl rubik-marker-hatch-regular">
