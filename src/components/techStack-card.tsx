@@ -26,4 +26,4 @@ function TechStackCard({ tech, svg}: technology) {
     </Card>
  );
 }
-    export default TechStackCard;
+export default TechStackCard;
