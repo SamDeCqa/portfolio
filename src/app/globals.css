@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Marker+Hatch&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.allison-regular {
+  font-family: "Allison", cursive;
+  /* font-weight: 400; */
+  font-style: normal;
+}
+
+.rubik-marker-hatch-regular {
+  font-family: "Rubik Marker Hatch", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
