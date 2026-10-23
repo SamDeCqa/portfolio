@@ -14,13 +14,13 @@ function Hero() {
             color="blue-gray"
             className="mb-4 lg:text-5xl !leading-tight text-4xl"
           >
-            Hello there! <br />I'm  <span className="allison-regular text-7xl font-extabold">Samwel</span>
+            Hello there! <br />I&apos;m  <span className="allison-regular text-7xl font-extabold">Samwel</span>
           </Typography>
           <Typography
             variant="lead"
             className="mb-4 !text-gray-500 md:pr-16 xl:pr-28"
           >
-            My name is Samwel Sikanyika, a passionate web developer located in Tanzania. In this portfolio you'll
+            My name is Samwel Sikanyika, a passionate web developer located in Tanzania. In this portfolio you&apos;ll
             get to know me and my skill in the field of software development.
           </Typography>
           <div className="grid">
