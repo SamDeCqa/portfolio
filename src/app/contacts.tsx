@@ -12,7 +12,7 @@ const contacts = [
     name: "WhatsApp",
     color: "hover:text-green-500 hover:border-green-500",
     icon: <SiWhatsapp className="w-14 h-14" />,
-    url : "https://wa.me/255768758291"
+    url : "https://wa.me/255789483241"
   },
   {
     name: "Instagram",
