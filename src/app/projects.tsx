@@ -3,6 +3,7 @@
 import { ProjectCard } from "@/components";
 import { Typography } from "@material-tailwind/react";
 import { getImagePrefix } from "../../utils/utils";
+import Transit from "@/components/transit";
 
 const PROJECTS = [
   {
@@ -49,7 +50,9 @@ export function Projects() {
       </div>
       <div className="container mx-auto grid grid-cols-1 gap-x-10 gap-y-20 md:grid-cols-2 xl:grid-cols-4">
         {PROJECTS.map((props, idx) => (
-          <ProjectCard key={idx} {...props} />
+          <Transit key={idx} delay={idx * 200}>
+            <ProjectCard {...props} />
+          </Transit>
         ))}
       </div>
     </section>

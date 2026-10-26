@@ -4,10 +4,11 @@ import { ReactNode, useEffect, useRef, useState } from "react";
 
 interface transitProps {
     children : ReactNode,
-    className? : string
+    className? : string,
+    delay? : number
 }
 
-export default function Transit({children, className = ""} : transitProps) {
+export default function Transit({children, className = "", delay = 0} : transitProps) {
     const ref = useRef<HTMLDivElement>(null);
     const [visible, setVisible] = useState(false);
 
@@ -26,12 +27,13 @@ export default function Transit({children, className = ""} : transitProps) {
 
         observer.observe(element)
 
-        return () => observer.unobserve;
+        return () => observer.disconnect();
     }, []);
 
     return (
         <div
         ref={ref}
+        style={{transitionDelay : visible ? `${delay}ms` : "0ms"}}
         className={
             `transition-all duration-700 ease-out motion-reduce:transition-none
              ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}
