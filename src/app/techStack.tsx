@@ -35,8 +35,8 @@ const techs = [
         svg: `${getImagePrefix()}logos/react-js.svg`
     },
     {
-        tech: "Go",
-        svg: `${getImagePrefix()}logos/go.svg`
+        tech: "Rust",
+        svg: `${getImagePrefix()}logos/Rust.wine.svg`
     },
 ];
 export function TechStack() {
