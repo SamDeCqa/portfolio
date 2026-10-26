@@ -1,4 +1,5 @@
 import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
+import { Typography } from "@material-tailwind/react";
 import { ReactNode } from "react";
 
 interface Contacts {
@@ -10,13 +11,13 @@ interface Contacts {
 
 export function ContactItem({ name, color, icon, url }: Contacts) {
   return (
-    <a href={url} target="_blank" className={`grid p-2 max-h-64 h-36 border border-gray-100 rounded-2xl space-y-2 text-gray-500 ${color} transition-all duration-300 cursor-pointer`}>
-      <div className="max-w-24 max-h-24 [&>svg]:w-full [&>svg]:h-full">
+    <a href={url} target="_blank" className={`p-2 max-h-64 h-16 flex flex-col items-center rounded-2xl space-y-2 text-gray-500 ${color} transition-all duration-300 cursor-pointer`}>
+      <div className="max-w-12 w-8  h-8 max-h-12 [&>svg]:w-full [&>svg]:h-full">
         {icon}
       </div>
       <div className="flex justify-between items-center">
-        <p>{name}</p>
-        <ArrowUpRightIcon className="w-4 h-4" />
+        <Typography>{name}</Typography>
+        <ArrowUpRightIcon className="w-2 h-2" />
       </div>
     </a>
   )

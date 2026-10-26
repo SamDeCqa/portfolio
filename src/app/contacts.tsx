@@ -10,31 +10,31 @@ import ContactItem from "@/components/contact-item";
 const contacts = [
   {
     name: "WhatsApp",
-    color: "hover:text-green-500 hover:border-green-500",
+    color: "text-green-500",
     icon: <SiWhatsapp className="w-14 h-14" />,
     url : "https://wa.me/255789483241"
   },
   {
     name: "Instagram",
-    color: "hover:text-pink-500 hover:border-pink-500",
+    color: "text-pink-500",
     icon: <SiInstagram />,
     url : "https://instagram.com/samdecqa"
   },
   {
     name: "Twitter(X)",
-    color: "hover:text-black hover:border-black",
+    color: "text-gray-900",
     icon: <SiX />,
     url : "https://x.com/cqa_001"
   },
   {
     name: "Telegram",
-    color: "hover:text-blue-400 hover:border-blue-400",
+    color: "text-blue-400",
     icon: <SiTelegram />,
     url : "https://t.me/prosperity"
   },
   {
     name: "Email",
-    color: "hover:text-gray-800 hover:border-gray-800",
+    color: "text-gray-800",
     icon: <EnvelopeOpenIcon />,
     url : "mailto:samwelsikanyika88@gmail.com"
   },
@@ -55,11 +55,10 @@ export function Contacts() {
           and let&apos;s embark on a journey of innovation and success.
         </Typography>
       </div>
-      <div className="flex flex-col md:flex-row gap-8 justify-center md:items-center space-y-4">
+      <div className="flex flex-col md:flex-row gap-8 justify-center items-center">
         {contacts.map((props, index) => (
           <ContactItem key={index} {...props} />
         ))}
-
       </div>
     </section>
   );
