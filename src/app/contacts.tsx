@@ -11,27 +11,32 @@ const contacts = [
   {
     name: "WhatsApp",
     color: "hover:text-green-500 hover:border-green-500",
-    icon: <SiWhatsapp className="w-14 h-14" />
+    icon: <SiWhatsapp className="w-14 h-14" />,
+    url : "https://wa.me/255768758291"
   },
   {
     name: "Instagram",
     color: "hover:text-pink-500 hover:border-pink-500",
-    icon: <SiInstagram />
+    icon: <SiInstagram />,
+    url : "https://instagram.com/samdecqa"
   },
   {
     name: "Twitter(X)",
     color: "hover:text-black hover:border-black",
-    icon: <SiX />
+    icon: <SiX />,
+    url : "https://x.com/cqa_001"
   },
   {
     name: "Telegram",
     color: "hover:text-blue-400 hover:border-blue-400",
-    icon: <SiTelegram />
+    icon: <SiTelegram />,
+    url : "https://t.me/prosperity"
   },
   {
     name: "Email",
     color: "hover:text-gray-800 hover:border-gray-800",
-    icon: <EnvelopeOpenIcon />
+    icon: <EnvelopeOpenIcon />,
+    url : "mailto:samwelsikanyika88@gmail.com"
   },
 ];
 
