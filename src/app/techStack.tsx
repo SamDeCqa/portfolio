@@ -44,7 +44,7 @@ export function TechStack() {
         <section>
             <p className="text-center text-7xl rubik-marker-hatch-regular">Tech Stack</p>
 
-            <div className="flex gap-4 w-full overflow-hidden justify-center">
+            <div className="flex flex-wrap gap-4 w-full overflow-hidden justify-center">
                 {techs.map((props, index) => (
                     <TechStackCard key={index} {...props} />
                 ))}
