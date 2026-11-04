@@ -15,6 +15,7 @@ export const metadata: Metadata = {
   title: "Samwel Sikanyika",
   description:
     "Meet an ambitious Software developer capable of fancy stuffs and building best websites, systems e.t.c",
+    icons: `${getImagePrefix()}favicon.png`
 };
 
 export default function RootLayout({
