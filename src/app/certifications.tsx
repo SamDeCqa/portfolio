@@ -6,8 +6,20 @@ import CertificationItem, { Certification } from "@/components/certification-ite
 import { Typography } from "@material-tailwind/react";
 
 const cardsData: Certification[] = [
-  { id: 1, name: "SecLeaf", description: "Hello ihdihi", color: "bg-cyan-600 text-white", img: `${getImagePrefix()}image/certs/SecLeafCertificate.png` },
-  { id: 2, name: "TeenTech", description: "Go wild but be good", color: "bg-pink-600 text-white", img: `${getImagePrefix()}image/certs/TeenTech.png` },
+  {
+    id: 1,
+    name: "SecLeaf",
+    description: "Participated in a World wide CyberSecurity competetions",
+    color: "bg-cyan-600 text-white",
+    img: `${getImagePrefix()}image/certs/SecLeafCertificate.png`
+  },
+  {
+    id: 2,
+    name: "TeenTech",
+    description: "Taught secondary school students about trending Tech issues like AI and Cyber-security",
+    color: "bg-pink-600 text-white",
+    img: `${getImagePrefix()}image/certs/TeenTech.png`
+  },
 ];
 
 export function Certifications() {
