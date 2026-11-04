@@ -10,6 +10,7 @@ import Resume from "./resume";
 import Testimonial from "./testimonial";
 import TechStack from "./techStack";
 import Contacts from "./contacts";
+import { Certifications } from "./certifications";
 
 export default function Portfolio() {
   return (
@@ -19,6 +20,7 @@ export default function Portfolio() {
       <Skills />
       <Projects />
       <TechStack />
+      <Certifications />
       <Resume />
       <Testimonial />
       <Contacts />
