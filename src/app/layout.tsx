@@ -1,8 +1,9 @@
 /* eslint-disable @next/next/next-script-for-ga */
-import "./globals.css";
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import { Layout, FixedPlugin } from "@/components";
+import { getImagePrefix } from "../../utils/utils";
+import "./globals.css";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -22,16 +23,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
-        <script
-          defer
-          data-site="samdecqa.github.io/portfolio"
-          src="https://api.nepcha.com/js/nepcha-analytics.js"
-        ></script>
-        <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+        
+        <link rel="shortcut icon" href={`${getImagePrefix()}favicon.png` } type="image/png" />
       </head>
-      <body className={roboto.className}>
+      <body className={roboto.className} suppressHydrationWarning>
         <Layout>
           {children}
           <FixedPlugin />
