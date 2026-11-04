@@ -55,7 +55,7 @@ export function Contacts() {
           and let&apos;s embark on a journey of innovation and success.
         </Typography>
       </div>
-      <div className="flex flex-col md:flex-row gap-8 justify-center items-center">
+      <div className="flex flex-wrap gap-8 justify-center items-center">
         {contacts.map((props, index) => (
           <ContactItem key={index} {...props} />
         ))}
