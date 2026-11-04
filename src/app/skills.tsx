@@ -32,12 +32,12 @@ const SKILLS = [
 
 export function Skills() {
   return (
-    <section className="mb-20 px-8 w-[100%] h-[100%]">
+    <section className="mb-20 px-8 w-[100%]">
       <div className="container mx-auto mb-12 text-center">
         <Typography color="blue-gray" className="mb-2 font-bold uppercase">
           my skills
         </Typography>
-        <Typography variant="h1" color="blue-gray" className="mb-4 text-7xl rubik-marker-hatch-regular">
+        <Typography variant="h1" color="blue-gray" className="mb-4 md:text-7xl text-5xl rubik-marker-hatch-regular">
           What I do
         </Typography>
         <Typography

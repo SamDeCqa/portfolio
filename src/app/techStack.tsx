@@ -41,8 +41,8 @@ const techs = [
 ];
 export function TechStack() {
     return (
-        <section className="mb-20 h-fit w-[100hw]">
-            <p className="text-center text-7xl rubik-marker-hatch-regular">Tech Stack</p>
+        <section className="mb-20 h-fit w-[100%]">
+            <p className="text-center md:text-7xl text-5xl rubik-marker-hatch-regular">Tech Stack</p>
 
             <div className="flex flex-wrap gap-4 w-full overflow-hidden justify-center">
                 {techs.map((props, index) => (

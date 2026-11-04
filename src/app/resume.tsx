@@ -26,10 +26,10 @@ const RESUME_ITEMS = [
 
 export function Resume() {
   return (
-    <section className="px-8 py-24">
+    <section className="px-8 py-24 w-[100%]">
       <div className="container mx-auto grid w-full grid-cols-1 items-center gap-16 lg:grid-cols-2">
         <div className="col-span-1">
-          <Typography variant="h2" color="blue-gray" className="text-7xl rubik-marker-hatch-regular">
+          <Typography variant="h2" color="blue-gray" className="md:text-7xl text-5xl rubik-marker-hatch-regular">
             My Resume
           </Typography>
           <Typography className="mb-4 mt-3 w-9/12 font-normal !text-gray-500">

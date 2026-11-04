@@ -42,9 +42,9 @@ const contacts = [
 
 export function Contacts() {
   return (
-    <section className="px-8 py-16">
+    <section className="px-8 py-16 w-[100%]">
       <div className="container mx-auto mb-20 text-center">
-        <Typography variant="h1" color="blue-gray" className="mb-4 text-7xl rubik-marker-hatch-regular">
+        <Typography variant="h1" color="blue-gray" className="mb-4 md:text-7xl text-5xl rubik-marker-hatch-regular">
           Contact Me
         </Typography>
         <Typography

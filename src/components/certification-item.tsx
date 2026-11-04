@@ -35,7 +35,7 @@ export function CertificationItem({
         zIndex,
         transition: "transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1)",
       }}
-      className={`h-64 w-96 absolute inset-0 rounded-2xl shadow-2xl border border-white/20 origin-bottom select-none overflow-hidden ${card.color}`}
+      className={`h-52 md:h-64 w-80 md:w-96 mx-auto absolute inset-0 rounded-2xl shadow-2xl border border-white/20 origin-bottom select-none overflow-hidden ${card.color}`}
     >
       {/* Full-card image container */}
       <div className="relative h-full w-full">
