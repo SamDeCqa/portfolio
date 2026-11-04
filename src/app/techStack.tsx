@@ -41,7 +41,7 @@ const techs = [
 ];
 export function TechStack() {
     return (
-        <section>
+        <section className="mb-20 h-fit w-[100hw]">
             <p className="text-center text-7xl rubik-marker-hatch-regular">Tech Stack</p>
 
             <div className="flex flex-wrap gap-4 w-full overflow-hidden justify-center">

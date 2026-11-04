@@ -32,8 +32,8 @@ const SKILLS = [
 
 export function Skills() {
   return (
-    <section className="px-8">
-      <div className="container mx-auto mb-20 text-center">
+    <section className="mb-20 px-8 w-[100%] h-[100%]">
+      <div className="container mx-auto mb-12 text-center">
         <Typography color="blue-gray" className="mb-2 font-bold uppercase">
           my skills
         </Typography>

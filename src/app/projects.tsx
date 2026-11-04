@@ -34,7 +34,7 @@ const PROJECTS = [
 
 export function Projects() {
   return (
-    <section className="py-28 px-8">
+    <section className="mb-20 px-8 w-[100hw]">
       <div className="container mx-auto mb-20 text-center">
         <Typography variant="h2" color="blue-gray" className="mb-4 text-7xl rubik-marker-hatch-regular">
           My Projects

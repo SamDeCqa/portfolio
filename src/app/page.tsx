@@ -22,7 +22,7 @@ export default function Portfolio() {
       <TechStack />
       <Certifications />
       <Resume />
-      <Testimonial />
+      {/* <Testimonial /> */}
       <Contacts />
       <Footer />
     </>
