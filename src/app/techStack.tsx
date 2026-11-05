@@ -1,5 +1,8 @@
+"use client"
+
 import TechStackCard from "@/components/techStack-card";
 import { getImagePrefix } from "../../utils/utils";
+import { Typography } from "@material-tailwind/react";
 
 const techs = [
     {
@@ -41,14 +44,23 @@ const techs = [
 ];
 export function TechStack() {
     return (
-        <section className="mb-20 h-fit w-[100%]">
+        <section className="mb-20 h-fit w-[100%] px-24">
             <p className="text-center md:text-7xl text-5xl rubik-marker-hatch-regular">Tech Stack</p>
 
-            <div className="flex flex-wrap gap-4 w-full overflow-hidden justify-center">
-                {techs.map((props, index) => (
-                    <TechStackCard key={index} {...props} />
-                ))}
+            <div className="md:flex items-center justify-between w-full">
+                <div className="flex flex-wrap gap-4 w-full overflow-hidden justify-center">
+                    <TechStackCard cards={techs} direction="left" speed={20} />
+                    <TechStackCard cards={techs} direction="right" speed={20} />
+                </div>
+
+                <div>
+                    <Typography>
+                        Very familiar with modern languages and frameworks
+                    </Typography>
+                </div>
             </div>
+
+
         </section>
     );
 }
