@@ -11,7 +11,7 @@ export function Footer() {
           <Typography className="text-center font-normal !text-gray-700">
             &copy; {CURRENT_YEAR}  All rights reserved
           </Typography>
-          <ul className="flex gap-8 items-center">
+          <ul className="flex gap-4 md:gap-8 items-center w-fit">
             {LINKS.map((link) => (
               <li key={link}>
                 <Typography
@@ -24,7 +24,6 @@ export function Footer() {
                 </Typography>
               </li>
             ))}
-            <Button color="gray">subscribe</Button>
           </ul>
         </div>
       </div>
