@@ -55,8 +55,8 @@ function Hero() {
         <Image
           width={1024}
           height={1024}
-          alt="team work"
-          src={`${getImagePrefix()}image/mimi2.jpg`}
+          alt="Cqah"
+          src={`${getImagePrefix()}image/mimi91.webp`}
           loading="eager"
           className="h-[36rem] w-full rounded-xl object-cover"
         />
