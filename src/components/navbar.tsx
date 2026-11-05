@@ -13,20 +13,22 @@ import {
   Squares2X2Icon,
   XMarkIcon,
   Bars3Icon,
+  AcademicCapIcon,
+  CubeIcon,
 } from "@heroicons/react/24/solid";
 
 const NAV_MENU = [
   {
-    name: "Page",
+    name: "Skills",
+    icon: CubeIcon,
+  },
+  {
+    name: "Projects",
     icon: RectangleStackIcon,
   },
   {
-    name: "Account",
-    icon: UserCircleIcon,
-  },
-  {
-    name: "Docs",
-    icon: CommandLineIcon,
+    name: "Resume/CV",
+    icon: AcademicCapIcon,
     href: "#",
   },
 ];

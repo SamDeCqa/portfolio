@@ -1,6 +1,6 @@
 import { Typography, Button } from "@material-tailwind/react";
 
-const LINKS = ["Home", "About Us", "Blog", "Service"];
+const LINKS = ["Home", "Skills", "Projects", "Resume/CV"];
 const CURRENT_YEAR = new Date().getFullYear();
 
 export function Footer() {
