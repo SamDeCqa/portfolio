@@ -10,31 +10,31 @@ import ContactItem from "@/components/contact-item";
 const contacts = [
   {
     name: "WhatsApp",
-    color: "text-green-500",
+    color: "green-500",
     icon: <SiWhatsapp className="w-14 h-14" />,
     url : "https://wa.me/255789483241"
   },
   {
     name: "Instagram",
-    color: "text-pink-500",
+    color: "pink-500",
     icon: <SiInstagram />,
     url : "https://instagram.com/samdecqa"
   },
   {
     name: "Twitter(X)",
-    color: "text-gray-900",
+    color: "gray-900",
     icon: <SiX />,
     url : "https://x.com/cqa_001"
   },
   {
     name: "Telegram",
-    color: "text-blue-400",
+    color: "blue-400",
     icon: <SiTelegram />,
-    url : "https://t.me/prosperity"
+    url : "https://t.me/sikanyika"
   },
   {
     name: "Email",
-    color: "text-gray-800",
+    color: "gray-800",
     icon: <EnvelopeOpenIcon />,
     url : "mailto:samwelsikanyika88@gmail.com"
   },
