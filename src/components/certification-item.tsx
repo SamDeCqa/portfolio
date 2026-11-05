@@ -43,6 +43,7 @@ export function CertificationItem({
           src={card.img}
           alt={card.name}
           fill
+          loading="eager"
           className="object-cover"
         />
 

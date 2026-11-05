@@ -16,6 +16,7 @@ function TechStackCard({ tech, svg}: technology) {
             alt={tech}
             width={76}
             height={90}
+            loading="eager"
             className="h-16 w-16 object-contain"
             />
         </CardHeader>

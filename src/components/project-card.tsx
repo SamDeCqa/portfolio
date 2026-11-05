@@ -22,6 +22,7 @@ export function ProjectCard({ img, title, desc, url }: ProjectCardProps) {
           src={img}
           alt={title}
           width={768}
+          loading="eager"
           height={768}
           className="h-full w-full object-cover"
         />

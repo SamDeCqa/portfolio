@@ -57,6 +57,7 @@ function Hero() {
           height={1024}
           alt="team work"
           src={`${getImagePrefix()}image/mimi2.jpg`}
+          loading="eager"
           className="h-[36rem] w-full rounded-xl object-cover"
         />
       </div>
