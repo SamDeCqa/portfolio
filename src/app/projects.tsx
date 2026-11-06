@@ -50,7 +50,7 @@ export function Projects() {
       </div>
       <div className="container mx-auto grid grid-cols-1 gap-x-10 gap-y-20 md:grid-cols-2 xl:grid-cols-4">
         {PROJECTS.map((props, idx) => (
-          <Transit key={idx} delay={idx * 200}>
+          <Transit key={idx} delay={idx * 300}>
             <ProjectCard {...props} />
           </Transit>
         ))}

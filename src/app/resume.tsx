@@ -11,6 +11,7 @@ import {
 import { ResumeItem } from "@/components";
 import Link from "next/link";
 import { ArrowDownTrayIcon } from "@heroicons/react/20/solid";
+import Transit from "@/components/transit";
 
 const RESUME_ITEMS = [
   {
@@ -41,37 +42,39 @@ export function Resume() {
             websites and web applications.
           </Typography>
           <div className="flex gap-8 items-center">
-          <Link
-            href="SamwelCV.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 px-8 py-1 border rounded w-fit bg-black text-white"
-          >
-            view CV
-            <EyeIcon
-              strokeWidth={3}
-              className="h-3.5 w-3.5 text-white"
-            />
-            </Link>
-            
             <Link
-            href="SamwelCV.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            download="Samwel_Sikanyika_CV.pdf"
-            className="flex items-center gap-2 px-8 py-1 border rounded w-fit hover:bg-gray-200 transition-all duration-300"
-          >
-            Download CV
-            <ArrowDownTrayIcon
-              strokeWidth={3}
-              className="h-3.5 w-3.5 text-gray-900"
-            />
+              href="SamwelCV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-8 py-1 border rounded w-fit bg-black text-white"
+            >
+              view CV
+              <EyeIcon
+                strokeWidth={3}
+                className="h-3.5 w-3.5 text-white"
+              />
             </Link>
-            </div>
+
+            <Link
+              href="SamwelCV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              download="Samwel_Sikanyika_CV.pdf"
+              className="flex items-center gap-2 px-8 py-1 border rounded w-fit hover:bg-gray-200 transition-all duration-300"
+            >
+              Download CV
+              <ArrowDownTrayIcon
+                strokeWidth={3}
+                className="h-3.5 w-3.5 text-gray-900"
+              />
+            </Link>
+          </div>
         </div>
         <div className="col-span-1 grid gap-y-6 lg:ml-auto pr-0 lg:pr-12 xl:pr-32">
           {RESUME_ITEMS.map((props, idx) => (
-            <ResumeItem key={idx} {...props} />
+            <Transit key={idx} delay={idx * 300}>
+              <ResumeItem {...props} />
+            </Transit>
           ))}
         </div>
       </div>
