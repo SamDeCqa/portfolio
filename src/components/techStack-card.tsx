@@ -38,7 +38,7 @@ export function TechStackCard({cards, direction = "left", speed = 25} : Marqueue
             }}
             >
                 {duplicatedCards.map((card, index) => (
-                    <Card shadow={false}>
+                    <Card key={index} shadow={false}>
                             <CardHeader floated={false} shadow={false} className="md:h-[90px] md:w-[76px] h-12 w-24">
                                 <Image
                                 src={card.svg}

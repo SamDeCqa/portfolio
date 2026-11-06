@@ -45,13 +45,13 @@ const techs = [
 ];
 export function TechStack() {
     return (
-        <section className="mb-20 w-full mx-auto">
-            <p className="text-center text-5xl md:text-7xl rubik-marker-hatch-regular">
+        <section className="mb-20 w-full mx-auto p-8">
+            <p className="text-center mb-4 text-5xl md:text-7xl rubik-marker-hatch-regular">
                 Tech Stack
             </p>
 
-            <div className="md:flex items-center justify-between w-full md:px-24">
-                <div className="md:w-1/2 w-full overflow-hidden">
+            <div className="container mx-auto grid h-full gap-10 min-h-[60vh] w-full grid-cols-1 items-center lg:grid-cols-2">
+                <div className="row-start-2 md:row-auto w-full overflow-hidden">
 
                     <div className="relative flex flex-wrap w-full justify-center">
                         <TechStackCard
@@ -79,11 +79,11 @@ export function TechStack() {
 
                 </div>
 
-                <Transit>
-                    <div className="">
+                <Transit className="w-full">
+                    <div>
                         <Typography
                             variant="lead"
-                            className="md:mx-auto w-1/2 font-normal !text-gray-500"
+                            className="md:mx-auto w-full font-normal !text-gray-500"
                         >
                             Very familiar with modern languages and frameworks with the aim of boosting productivity
                         </Typography>
