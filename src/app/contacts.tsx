@@ -6,37 +6,38 @@ import {
 import { ArrowUpRightIcon, EnvelopeIcon, EnvelopeOpenIcon, FaceSmileIcon, PhoneIcon, TicketIcon } from "@heroicons/react/24/solid";
 import { SiX, SiInstagram, SiWhatsapp, SiTelegram } from "react-icons/si";
 import ContactItem from "@/components/contact-item";
+import Transit from "@/components/transit";
 
 const contacts = [
   {
     name: "WhatsApp",
     color: "green-500",
     icon: <SiWhatsapp className="w-14 h-14" />,
-    url : "https://wa.me/255789483241"
+    url: "https://wa.me/255789483241"
   },
   {
     name: "Instagram",
     color: "pink-500",
     icon: <SiInstagram />,
-    url : "https://instagram.com/samdecqa"
+    url: "https://instagram.com/samdecqa"
   },
   {
     name: "Twitter(X)",
     color: "gray-900",
     icon: <SiX />,
-    url : "https://x.com/cqa_001"
+    url: "https://x.com/cqa_001"
   },
   {
     name: "Telegram",
     color: "blue-400",
     icon: <SiTelegram />,
-    url : "https://t.me/sikanyika"
+    url: "https://t.me/sikanyika"
   },
   {
     name: "Email",
     color: "gray-800",
     icon: <EnvelopeOpenIcon />,
-    url : "mailto:samwelsikanyika88@gmail.com"
+    url: "mailto:samwelsikanyika88@gmail.com"
   },
 ];
 
@@ -57,7 +58,9 @@ export function Contacts() {
       </div>
       <div className="flex flex-wrap gap-8 justify-center items-center">
         {contacts.map((props, index) => (
-          <ContactItem key={index} {...props} />
+          <Transit key={index} delay={index*300}>
+            <ContactItem {...props} />
+          </Transit>
         ))}
       </div>
     </section>
