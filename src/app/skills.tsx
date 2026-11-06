@@ -52,7 +52,7 @@ export function Skills() {
 
         <div className="container mx-auto grid grid-cols-1 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
           {SKILLS.map((props, idx) => (
-            <Transit key={idx} delay={idx * 200}>
+            <Transit key={idx} delay={idx * 300}>
               <SkillCard {...props} />
             </Transit>
           ))}
